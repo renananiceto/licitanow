@@ -1,0 +1,52 @@
+.whapper{
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  width: 96%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  padding: 18px 60px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.1)
+    );
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(20px);
+
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.ImageLogo{
+  width: 70px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #22c55e;
+}
+
+
+

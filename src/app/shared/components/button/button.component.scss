@@ -1,0 +1,16 @@
+.btn-login {
+ background: #362c2c;
+background: linear-gradient(37deg,rgba(54, 44, 44, 1) 0%, rgba(0, 194, 10, 1) 73%);
+  border: none;
+  padding: 10px 22px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4);
+}

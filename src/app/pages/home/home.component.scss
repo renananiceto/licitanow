@@ -1,0 +1,26 @@
+.whapper {
+  width: 1920px;
+}
+.content{
+width: 90%;
+margin: 0 auto
+}
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url('/assets/images/background.jpg') center/cover no-repeat;
+  background-size: cover;
+  color: white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+  }
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+}
