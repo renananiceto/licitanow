@@ -14,3 +14,15 @@ background: linear-gradient(37deg,rgba(54, 44, 44, 1) 0%, rgba(0, 194, 10, 1) 73
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4);
 }
+
+.primary {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.secondary {
+  background: linear-gradient(135deg, #334155, #1e293b);
+}
+
+.danger {
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+}

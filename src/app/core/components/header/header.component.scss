@@ -5,7 +5,7 @@
 .navbar {
   position: fixed;
   top: 20px;
-  width: 96%;
+  min-width: 96%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
@@ -47,6 +47,7 @@
 .menu a:hover {
   color: #22c55e;
 }
+
 
 
 

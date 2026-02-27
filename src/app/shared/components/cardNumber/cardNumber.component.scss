@@ -1,0 +1,28 @@
+.icons{
+  width: 60px;
+}
+
+.containerCard{
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 320px;
+  min-width: 320px;
+  border: solid 0.1px silver;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.8)
+    );
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.numberDemostration{
+font-size: 48px;
+color: rgba(186, 236, 103, 1);
+}
+
+.paragrapCard{
+  font-size: 22px;
+}

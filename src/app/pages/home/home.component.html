@@ -1,11 +1,90 @@
 <section class="hero">
   <div class="content">
     <section class="conteudo">
-      <h2>Página Home funcionando</h2>
-      <p>Se você está vendo isso, o componente Home está carregando corretamente.</p>
+      <h1>A Nova Geração </h1>
+      <h1>de Concursos Online</h1>
+      <p class="paragraphBaner">Inovação e confiança em cada proposta</p>
+      <div class="containerBtn">
+        <app-button label="Começar" type="primary"></app-button>
+        <app-button label="Pesquisar Concursos" type="secondary"></app-button>
+      </div>
+    </section>
+    <section class="containerCard">
+      <div>
+        <app-card-number icon="/assets/icons/check-correct-svgrepo-com 1.svg" number="500"
+          label="Concursos finalizados">
+        </app-card-number>
+      </div>
+      <div>
+        <app-card-number icon="/assets/icons/clock.svg" number="80" label="Concursos activos">
+        </app-card-number>
+      </div>
+      <div>
+        <app-card-number icon="/assets/icons/check-correct-svgrepo-com 1.svg" number="1,200" label="Utilizadores">
+        </app-card-number>
+      </div>
     </section>
   </div>
-</section>
-<div class="whapper">
 
-</div>
+</section>
+
+
+<section class="category">
+  <div class="content">
+    <span class="badge">Categorias de Concurso</span>
+    <h2>Que Tipo de Concursos Pode Criar?</h2>
+    <p class="subtitle">
+      A nossa plataforma suporta todos os tipos de concursos ligados ao setor da construção.
+    </p>
+    <div class="containerCard">
+      <div class="card" *ngFor="let item of categories">
+        <div class="iconWrapper">
+          <img [src]="item.icon" alt="icone" />
+        </div>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="process">
+
+  <div class="content">
+
+    <span class="badge">Processo Simples</span>
+
+    <h2>Como Funciona</h2>
+
+    <p class="subtitle">
+      Da criação do concurso à conclusão do projeto em quatro passos simples
+    </p>
+
+    <div class="steps">
+
+      <div class="line"></div>
+
+      <div class="step" *ngFor="let step of steps; let i = index">
+
+        <div class="circle">
+          <span class="number">0{{ i + 1 }}</span>
+          <img [src]="step.icon" alt="icon">
+        </div>
+
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.description }}</p>
+
+      </div>
+
+    </div>
+
+    <button class="cta">
+      Crie o Seu Primeiro Concurso →
+    </button>
+
+  </div>
+
+</section>
