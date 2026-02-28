@@ -28,7 +28,6 @@
 
 </section>
 
-
 <section class="category">
   <div class="content">
     <span class="badge">Categorias de Concurso</span>
@@ -84,6 +83,83 @@
     <button class="cta">
       Crie o Seu Primeiro Concurso →
     </button>
+
+  </div>
+
+</section>
+
+<section class="principles">
+  <div class="content">
+    <h2>Os Nossos Princípios</h2>
+    <p class="subtitle">
+      Confiança, transparência e valor. Estes princípios orientam tudo o que fazemos
+    </p>
+    <div class="containerCard">
+      <div class="card" *ngFor="let item of principles">
+        <div class="iconWrapper">
+          <img [src]="item.icon" alt="icone" />
+        </div>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+
+  <div class="about-container">
+
+    <div class="about-left">
+      <h2>
+        Transformamos a forma como a <span>construção</span> é contratada
+      </h2>
+      <p>
+        Fornecemos soluções digitais inovadoras para o setor da construção,
+        simplificando e otimizando todo o processo de contratação e gestão de projetos.
+      </p>
+      <p>
+        Garantimos eficiência, fiabilidade e rigor em cada etapa,
+        desde a criação do concurso até à adjudicação final.
+      </p>
+      <app-button label="Saber mais sobre nós"></app-button>
+    </div>
+    <div class="about-right">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>500+</h3>
+          <span>Projetos concluídos</span>
+        </div>
+        <div class="stat-card">
+          <h3>25+</h3>
+          <span>Anos de experiência</span>
+        </div>
+        <div class="stat-card">
+          <h3>91%</h3>
+          <span>Avaliação de satisfação</span>
+        </div>
+        <div class="stat-card">
+          <h3>15+</h3>
+          <span>Profissionais licenciados</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="cta-container" #ctaCard>
+    <div class="cta-content">
+      <h2>Transforme o Seu Negócio de Construção Hoje</h2>
+      <p>
+        Junte-se à revolução da construção. Comece a criar ou licitar
+        em leilões e descubra novas oportunidades.
+      </p>
+      <div class="cta-actions">
+        <button class="btn-primary">Começar Agora →</button>
+        <button class="btn-secondary">Agendar Um Demo</button>
+      </div>
+    </div>
 
   </div>
 
