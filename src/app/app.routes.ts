@@ -2,10 +2,10 @@ import { Routes } from '@angular/router';
 import { LayoutComponent } from './core/components/layout/layout.component';
 
 import { HomeComponent } from './pages/home/home.component';
-import { EventosComponent } from './pages/eventos/eventos.component';
 import { PrecosComponent } from './pages/precos/precos.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
-
+import { CreditosComponent } from './pages/creditos/creditos.component';
+import { SuporteComponent } from './pages/suporte/suporte.component';
 
 export const routes: Routes = [
   {
@@ -13,9 +13,10 @@ export const routes: Routes = [
     component: LayoutComponent,
     children: [
       { path: '', component: HomeComponent },
-      { path: 'eventos', component: EventosComponent },
+      { path: 'suporte', component: SuporteComponent },
       { path: 'precos', component: PrecosComponent },
-      { path: 'sobre', component: SobreComponent }
+      { path: 'sobre', component: SobreComponent },
+      { path: 'creditos', component: CreditosComponent },
     ]
   },
   { path: '**', redirectTo: '' }
