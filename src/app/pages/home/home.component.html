@@ -16,11 +16,11 @@
         </app-card-number>
       </div>
       <div>
-        <app-card-number icon="/assets/icons/clock.svg" number="80" label="Concursos activos">
+        <app-card-number icon="/assets/icons/active.svg" number="80" label="Concursos activos">
         </app-card-number>
       </div>
       <div>
-        <app-card-number icon="/assets/icons/check-correct-svgrepo-com 1.svg" number="1,200" label="Utilizadores">
+        <app-card-number icon="/assets/icons/group.svg" number="1,200" label="Utilizadores">
         </app-card-number>
       </div>
     </section>
@@ -35,10 +35,10 @@
     <p class="subtitle">
       A nossa plataforma suporta todos os tipos de concursos ligados ao setor da construção.
     </p>
-    <div class="containerCard">
+    <div data-aos="fade-down" class="containerCard">
       <div class="card" *ngFor="let item of categories">
         <div class="iconWrapper">
-          <img [src]="item.icon" alt="icone" />
+          <img class="image__category" [src]="item.icon" alt="icone" />
         </div>
         <h3>{{ item.title }}</h3>
         <p>{{ item.description }}</p>
@@ -53,33 +53,22 @@
 <section class="process">
 
   <div class="content">
-
     <span class="badge">Processo Simples</span>
-
     <h2>Como Funciona</h2>
-
     <p class="subtitle">
       Da criação do concurso à conclusão do projeto em quatro passos simples
     </p>
-
-    <div class="steps">
-
+    <div data-aos="fade-down" class="steps">
       <div class="line"></div>
-
       <div class="step" *ngFor="let step of steps; let i = index">
-
         <div class="circle">
           <span class="number">0{{ i + 1 }}</span>
           <img [src]="step.icon" alt="icon">
         </div>
-
         <h3>{{ step.title }}</h3>
         <p>{{ step.description }}</p>
-
       </div>
-
     </div>
-
     <app-button label=" Crie o Seu Primeiro Concurso →"></app-button>
   </div>
 
@@ -91,7 +80,7 @@
     <p class="subtitle">
       Confiança, transparência e valor. Estes princípios orientam tudo o que fazemos
     </p>
-    <div class="containerCard">
+    <div data-aos="fade-down" class="containerCard">
       <div class="card" *ngFor="let item of principles">
         <div class="iconWrapper">
           <img [src]="item.icon" alt="icone" />
@@ -121,7 +110,7 @@
       </p>
       <app-button label="Saber mais sobre nós"></app-button>
     </div>
-    <div class="about-right">
+    <div data-aos="fade-down" class="about-right">
       <div class="stats-grid">
         <div class="stat-card">
           <h3>500+</h3>
@@ -166,7 +155,7 @@
 
   <div class="partners-header">
     <div class="icon-wrapper">
-      <i class="user-icon"></i>
+      <img class="user-icon" src="../../../assets/icons/group.svg" />
     </div>
 
     <h2>Junte-se à nossa rede de colaboradores</h2>

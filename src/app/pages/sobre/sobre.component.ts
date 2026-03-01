@@ -12,24 +12,24 @@ export class SobreComponent {
 
   principles = [
     {
-      icon: 'assets/icons/create.png',
-      title: 'Sem Subscrição',
-      description: 'Pague apenas pelo que utiliza. Sem taxas ocultas, sem encargos recorrentes, sem compromissos'
-    },
-    {
-      icon: 'assets/icons/time.png',
+      icon: 'assets/icons/heart.svg',
       title: 'Transparência',
-      description: 'Visibilidade total sobre todos os processos, preços e progresso dos projetos. O que vê é exatamente o que obtém'
+      description: 'Operamos com total clareza em todos os processos, garantindo confiança entre todas as partes envolvidas.'
     },
     {
-      icon: 'assets/icons/trophy.png',
-      title: 'Criar Concursos Grátis',
-      description: 'Inicie o seu concurso sem custos. Obtenha propostas competitivas de empreiteiros qualificados sem taxas iniciais'
+      icon: 'assets/icons/group.svg',
+      title: 'Colaboração',
+      description: 'Acreditamos no poder das parcerias. Promovemos um ambiente onde clientes, fornecedores e profissionais trabalham em conjunto para alcançar os melhores resultados.'
     },
     {
-      icon: 'assets/icons/chat.png',
-      title: 'Colaboradores',
-      description: 'Adira ao nosso programa de colaboradores e receba uma percentagem dos créditos utilizados pelos convidados que trouxe para a plataforma'
+      icon: 'assets/icons/medal.svg',
+      title: 'Excelência',
+      description: 'Comprometemo-nos a oferecer um serviço de qualidade superior, assegurando rigor técnico e profissionalismo em todas as interações.'
+    },
+    {
+      icon: 'assets/icons/internet.svg',
+      title: 'Inovação',
+      description: 'Utilizamos tecnologia de ponta para revolucionar a forma como os concursos e projetos de construção são geridos em Portugal.'
     }
   ];
 }
